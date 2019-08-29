@@ -40,10 +40,8 @@ module Overrides
           collection
           custom_create_resource
           custom_update_resource
-          custom_tests
           create
           delete
-          has_tests
           hidden
           imports
           notes
@@ -74,10 +72,8 @@ module Overrides
         check :collection, type: ::String
         check :custom_create_resource, type: :boolean, default: false
         check :custom_update_resource, type: :boolean, default: false
-        check :custom_tests, type: :boolean, default: false
         check :create, type: ::String
         check :delete, type: ::String
-        check :has_tests, type: :boolean, default: true
         check :hidden, type: ::Array, item_type: String, default: []
         check :imports, type: ::Array, default: [], item_type: String
         check :notes, type: ::Array, item_type: String
